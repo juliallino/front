@@ -11,7 +11,7 @@ const updateProductDescription = document.querySelector('#update-description');
 
 // Function to fetch all products from the server
 async function fetchProducts() {
-  const response = await fetch('http://localhost:5000/products');
+  const response = await fetch('http://18.216.187.44:5050/products');
   const products = await response.json();
 
   // Clear product list
@@ -59,7 +59,7 @@ addProductForm.addEventListener('submit', async event => {
 
 // Function to add a new product
 async function addProduct(name, price, description) {
-  const response = await fetch('http://localhost:5000/products', {
+  const response = await fetch('http://18.216.187.44:5050/products', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -71,7 +71,7 @@ async function addProduct(name, price, description) {
 
 // Function to delete a new product
 async function deleteProduct(id) {
-  const response = await fetch('http://localhost:5000/products/' + id, {
+  const response = await fetch('http://18.216.187.44:5050/products/' + id, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ addProductForm.addEventListener('submit', async event => {
 
 // Function to add a new product
 async function addProduct(name, price, description) {
-  const response = await fetch('http://localhost:5000/products', {
+  const response = await fetch('http://18.216.187.44:5050/products', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ async function addProduct(name, price, description) {
 
 // Function to delete a new product
 async function deleteProduct(id) {
-  const response = await fetch('http://localhost:5000/products/' + id, {
+  const response = await fetch('http://18.216.187.44:5050/products/' + id, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
